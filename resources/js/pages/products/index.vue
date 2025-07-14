@@ -89,7 +89,7 @@ const handleDelete = (id: number) => {
                             <TableCell class="font-medium">{{ product.name }}</TableCell>
                             <TableCell>{{ product.price }}</TableCell>
                             <TableCell>{{ product.description }}</TableCell>
-                            <TableCell class="text-center space-x-2">
+                            <TableCell class="text-center s">
                                 <Link :href="route('products.edit', {id: product.id})"><Button class="bg-slate-600">Edit</Button></Link>
                                 <Button class="bg-red-600" @click="handleDelete(product.id)">Delete</Button>
                             </TableCell>
